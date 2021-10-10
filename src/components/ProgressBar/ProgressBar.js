@@ -46,12 +46,15 @@ const Wrapper = styled.div`
   height: var(--height);
   border-radius: var(--borderRadius);
   box-shadow: inset 0px 2px 4px ${COLORS.transparentGray35};
+  background-color: ${COLORS.transparentGray15};
 `;
 
 const ProgressFillWrapper = styled.div`
-  width: 100%;
   height: 100%;
   border-radius: 4px;
+  /**
+  trim off corners when progress bar is near full
+  */
   overflow: hidden;
 `;
 
